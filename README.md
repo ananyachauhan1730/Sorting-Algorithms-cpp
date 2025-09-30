@@ -23,5 +23,45 @@ Bubble Sort
 
 Bubble sort is one of the most straightforward sorting algorithms. In this sorting technique, we begin by comparing the first two elements of the array and checking if the first element is greater than the second element; if it is, we will swap those elements and move forward to the next element.
 
+1. Start with the first element, assume it is the minimum.
+
+
+2. Compare this element with all the remaining elements.
+
+
+3. If any smaller element is found, mark its position as the new minimum.
+
+
+4. Swap the minimum element with the current element.
+
+
+5. Repeat steps 1–4 for the next position until the entire array is sorted.
+
+6. Input: An array A of n elements
+Output: The array A sorted in ascending order
+
+Start from the second element (index 1) of the array.
+
+Set key = A[i] (the element to be inserted).
+
+Initialize j = i - 1.
+
+Compare key with each element in the sorted portion (A[0..i-1]):
+
+While j >= 0 and A[j] > key do:
+
+Move A[j] one position to the right: A[j + 1] = A[j]
+
+Decrement j by 1 (j = j - 1)
+
+Insert key at its correct position: A[j + 1] = key.
+
+Increment i and repeat steps 2–5 until all elements are processed.
+
+End – the array is sorted.
+
+
+
+
 
 
